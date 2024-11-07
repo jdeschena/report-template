@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage[final]{style}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{amsmath}
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[export]{adjustbox} % for graphics alignment
+\usepackage{verbatim} % for multiline comments
+\usepackage{bm} % for bold symbols
+\usepackage{enumitem} % For more control over enumerations
+\usepackage{minted} % for code sections formatting
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+
+\usepackage{xcolor}
+\newcommand{\noteW}[1]{{\color{green}[W: {\small #1}]}}
+
+\newcommand{\mytitle}{Project Title}
+\newcommand{\authorname}{Student Name}
+\newcommand{\professor}{Name of the professor}
+\newcommand{\supervisor}{Name of PhD student}
+\newcommand{\labname}{CLAIRE}
+
+\title{\mytitle}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+
+
+\begin{document}
+
+\input{title}
+
+\begin{abstract}
+An abstract is a brief summary of a research article, thesis, review, conference proceeding, or any in-depth analysis of a particular subject or discipline. It is often used to help the reader quickly understand the paper's purpose. Abstracts are typically a single paragraph, between 150 and 250 words, and they highlight the main objectives, methods, results, and conclusions of the research. The purpose of an abstract is to provide a concise and accurate representation of the content of the paper, allowing readers to decide whether the full document will be of interest to them. This template is a good starting point from reporting results for machine learning projects. It follows a structure closely related to the one used for machine learning papers.
+
+\end{abstract}
+
+\section{Introduction}
+\paragraph{Engaging the Reader and Motivating the Problem}
+An effective introduction should capture the reader's interest by emphasizing the importance and relevance of the problem. This can be achieved through real-world examples, discussing the potential impact of the research, and highlighting novel aspects of the work. It is crucial to explain the problem's significance and the need for addressing it, which involves discussing limitations or gaps in existing literature and how the current work aims to address these issues. While the introduction appears first in the report, it does not need to be written first, as the scope and goals of the project are likely to change as the project progresses.
+
+\paragraph{Clarifying Contributions and Contextualizing the Research}
+For projects proposing a novel solution, it is important to articulate the main contributions of the research. This involves summarizing key findings and explicitly listing contributions to help the reader quickly understand the research's significance and how it advances the field. Highlighting practical applications or implications can further underscore the work's value. Additionally, the introduction should provide a brief review of related work to position the current research within the broader context of the field, explaining how it differs from or improves upon previous studies.
+
+\paragraph{Providing Structure and Roadmap}
+The introduction should also outline the paper's structure, offering a roadmap of the content in the following sections.
+
+
+\section{Background}
+\paragraph{Foundations for the project}
+The background section should discuss the necessary prerequisites to understand the project. For instance, if the project utilizes pre-trained models, this section should introduce them and explain how they work. If the project is about image segmentation, this section should introduce the concepts of segmentation and the most common solutions (e.g. using a convolutional neural network). If the project is about large language models, this section should introduce the concepts of language modeling and the most common approaches to train them (e.g. unsupervised next-token prediction).
+
+\section{Methods}
+This section should clearly explain the methods used in the project. It should describe the different approaches considered for solving the problem and explain why certain choices were made, possibly referring to other parts of the report like the experimental section or appendix. The methods section should be detailed enough for others to replicate the experiments. In case you performed a large amount of experiments, that are not all leading to your final result, you can decide to include only the most important ones in the methods section, while referring to the appendix for the others.
+
+\section{Experiments}
+This section should report the results of the experiments conducted in the project. Importantly, it should begin with a description of the experimental setup, the datasets and benchmarks used and the evaluation metrics. As for the methods section, the results section should be detailed enough for others to understand the results and replicate the experiments. Similarly, some experiments can be deferred to the appendix.
+
+
+\section{Conclusion and Future Work}
+The conclusion should start with a concise summary of the project's goals and findings. It is important to critically analyze whether the goals were achieved, and if not, to identify the main reasons for this. This section should also address the limitations of the results, discussing the contexts in which they may not apply and the reasons for these limitations. Importantly, the conclusion should not introduce new information; instead, it should recap the most significant results and insights. Lastly, it should outline potential directions for future work.
+
+
+
+\section{Related work}
+In this section, present and briefly describe previous works relevant to your project. Explain their relationship to your work, noting similarities and differences. Additionally, consider including influential research from other fields that influenced your project.
+
+\newpage
+
+\bibliography{refs}
+
+\newpage
+
+\appendix
+
+\section{Appendix}
+
+The appendix can be used to include additional information that supports the main content of the report but is not essential for understanding the main points.
+
+\bibliographystyle{plainnat}
+\end{document}
